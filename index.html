@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lecture10</title>
+	<style>
+		a {
+			display: block;
+			color: navi;
+			font: 20px bold Calibri;
+		}
+		a:visited {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<a href="http://google.com" id="google">Cmon! Click Me!</a>
+</form>
+
+	<script>
+		var googfunc = function (e) {
+			if (!confirm('Realy don\'t want to go to this link?')) {
+				if (!confirm('Realy realy don\'t want to???')) {
+					alert ('okay :(');
+					e.preventDefault();
+			    } 
+		    }
+	    } 
+		//button.addEventListener('click', subfunc);
+		google.addEventListener('click', googfunc);
+
+	</script>
+</body>
+</html>
